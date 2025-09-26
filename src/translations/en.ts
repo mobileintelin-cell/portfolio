@@ -222,7 +222,7 @@ export const en = {
       scalable: "Scalable solutions built for future growth",
     },
     hero: {
-      title: "Vietnamese Development Team",
+      title: "MMO 2025 Development Team",
       subtitle: "Mobile • Web • Quality Assurance",
       description: "Expert cross-functional team delivering innovative mobile applications, responsive web solutions, and comprehensive quality assurance services.",
       getStarted: "Get Started Today",
@@ -287,12 +287,12 @@ export const en = {
       },
       users: {
         id: 'users',
-        value: '50M+ Users',
+        value: '5M+ Users',
         description: 'Serving millions across Vietnam'
       },
       projects: {
         id: 'projects',
-        value: '100+ Projects',
+        value: '10+ Projects',
         description: 'Successfully delivered'
       }
     },

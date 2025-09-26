@@ -237,7 +237,7 @@ export const vi: TranslationKeys = {
       scalable: "Giải pháp linh hoạt, dễ mở rộng cho tương lai"
     },
     hero: {
-      title: "Đội Ngũ Phát Triển Việt Nam",
+      title: "MMO 2025 Development Team",
       subtitle: "Mobile • Web • Đảm Bảo Chất Lượng",
       description: "Đội ngũ chuyên gia đa chức năng cung cấp các ứng dụng di động sáng tạo, giải pháp web responsive và dịch vụ đảm bảo chất lượng toàn diện.",
       getStarted: "Bắt Đầu Ngay",
@@ -302,12 +302,12 @@ export const vi: TranslationKeys = {
       },
       users: {
         id: 'users',
-        value: '50M+ Người dùng',
+        value: '5M+ Người dùng',
         description: 'Phục vụ hàng triệu người trên khắp Việt Nam'
       },
       projects: {
         id: 'projects',
-        value: '100+ Dự án',
+        value: '10+ Dự án',
         description: 'Triển khai thành công'
       }  
     },

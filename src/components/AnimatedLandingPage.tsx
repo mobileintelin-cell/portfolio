@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from '../contexts/LanguageContext';
+import { useToast } from '../contexts/ToastContext';
 import { motion, AnimatePresence } from 'motion/react';
 import logoImage from '../assets/logo.png';
 import hrmImage from '../assets/hrm.png';
@@ -52,8 +53,18 @@ type SkillSection = {
 
 export function AnimatedLandingPage() {
   const t = useTranslation();
+  const { addToast } = useToast();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [gsapLoaded, setGsapLoaded] = useState(false);
+
+  // Toast function for incomplete features
+  const showToast = (message: string = "This function has not been completed yet") => {
+    addToast({
+      title: message,
+      description: "We're working on implementing this feature. Stay tuned!",
+      duration: 3000,
+    });
+  };
 
   // Safety check for translations - if not available, show loading
   if (!t || !t.nav || !t.landing || !t.landing.overview || !t.landing.hero) {
@@ -619,24 +630,26 @@ export function AnimatedLandingPage() {
               <LanguageDropdown variant="nav" />
             {import.meta.env.DEV && 
             <div> 
-              <Link to="/login">
                 <Button 
                   variant="ghost" 
                   className="font-medium border-0 bg-transparent hover:bg-white/5"
                   style={{ color: 'var(--landing-text-secondary)' }}
+                  onClick={() => showToast("Get Started feature is not available yet")}
                 >
                   {t.nav.signIn}
                 </Button>
-              </Link>
-              <Link to="/login">
-                <Button className="animated-button gap-2 px-8 py-3 font-semibold rounded-xl border-0" style={{ 
-                  backgroundColor: 'var(--landing-accent-primary)', 
-                  color: '#000000' 
-                }}>
+                <Button 
+                  className="animated-button gap-2 px-8 py-3 font-semibold rounded-xl border-0" 
+                  style={{ 
+                    backgroundColor: 'var(--landing-accent-primary)', 
+                    color: '#000000' 
+                  }}
+                  onClick={() => showToast("Get Started feature is not available yet")}
+                >
                   {t.nav.getStarted}
                   <ArrowRight className="w-4 h-4" />
                 </Button>
-              </Link></div>}
+             </div>}
             </div>
 
             {/* Mobile menu button */}
@@ -682,15 +695,14 @@ export function AnimatedLandingPage() {
                       {t.nav.signIn}
                     </Button>
                   </Link>
-                  <Link to="/login">
                     <Button className="animated-button w-full gap-2 py-3 text-lg font-semibold rounded-xl border-0" style={{ 
                       backgroundColor: 'var(--landing-accent-primary)', 
                       color: '#000000' 
-                    }}>
+                    }}
+                    onClick={() => showToast("Get Started feature is not available yet")}>
                       {t.nav.getStarted}
                       <ArrowRight className="w-5 h-5" />
                     </Button>
-                  </Link>
                 </div>
               </div>
             </div>
@@ -733,16 +745,15 @@ export function AnimatedLandingPage() {
               </div>
 
               <div ref={heroCtasRef} className="flex flex-col sm:flex-row gap-6">
-                <Link to="/login">
                   <Button 
                     size="lg" 
                     className="animated-button gap-3 px-10 py-4 text-lg font-semibold rounded-xl border-0" 
                     style={{ backgroundColor: 'var(--landing-accent-primary)', color: '#000000' }}
+                    onClick={() => showToast("Get Started feature is not available yet")}
                   >
                     {t.landing.hero.getStarted}
                     <ArrowRight className="w-5 h-5" />
                   </Button>
-                </Link>
                 <Button 
                   size="lg" 
                   variant="outline" 
@@ -775,11 +786,13 @@ export function AnimatedLandingPage() {
         </div>
 
         {/* Scroll hint */}
-        <div ref={scrollHintRef} className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <ChevronDown className="w-8 h-8" style={{ color: 'var(--landing-text-secondary)' }} />
-        </div>
+       
       </section>
-
+    <section className='pt-20'>
+      <div ref={scrollHintRef} className="absolute  left-1/2 transform -translate-x-1/2">
+              <ChevronDown className="w-8 h-8" style={{ color: 'var(--landing-text-secondary)' }} />
+            </div>
+    </section>
       {/* 2) Team Overview */}
       <section ref={overviewRef} id="team" className="py-32" style={{ backgroundColor: 'var(--landing-bg-base)' }}>
         <div className="max-w-7xl mx-auto px-4 lg:px-20">
@@ -1496,10 +1509,14 @@ export function AnimatedLandingPage() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.8 }}
                   >
-                    <Button className="animated-button gap-2" style={{ 
-                      backgroundColor: 'var(--landing-accent-primary)', 
-                      color: '#000000' 
-                    }}>
+                    <Button 
+                      className="animated-button gap-2" 
+                      style={{ 
+                        backgroundColor: 'var(--landing-accent-primary)', 
+                        color: '#000000' 
+                      }}
+                      onClick={() => showToast("Case study details are not available yet")}
+                    >
                       {t.landing.portfolio.viewCaseStudy}
                       <ExternalLink className="w-4 h-4" />
                     </Button>
@@ -1924,6 +1941,7 @@ export function AnimatedLandingPage() {
                 <Button 
                   size="lg" 
                   className="animated-button gap-3 px-10 py-4 text-lg font-semibold rounded-xl border-2 bg-black text-white border-black hover:bg-black/90"
+                  onClick={() => showToast("Contact form is not available yet")}
                 >
                   {t.landing.cta.primaryAction}
                   <ArrowRight className="w-5 h-5" />
@@ -1932,6 +1950,7 @@ export function AnimatedLandingPage() {
                 size="lg" 
                 variant="outline" 
                 className="animated-button gap-3 px-10 py-4 text-lg font-semibold rounded-xl border-2 border-black/20 text-black bg-transparent hover:bg-black/5"
+                onClick={() => showToast("Portfolio details are not available yet")}
               >
                 {t.landing.cta.secondaryAction}
                 <Users className="w-5 h-5" />
@@ -1964,18 +1983,7 @@ export function AnimatedLandingPage() {
               <p className="text-sm leading-relaxed" style={{ color: 'var(--landing-text-secondary)' }}>
                 {t.landing.footer.description}
               </p>
-              <div className="flex gap-4">
-                {['Twitter', 'LinkedIn', 'GitHub'].map((social, index) => (
-                  <a 
-                    key={index} 
-                    href="#" 
-                    className="footer-icon text-sm transition-colors hover:text-white" 
-                    style={{ color: 'var(--landing-text-secondary)' }}
-                  >
-                    {social}
-                  </a>
-                ))}
-              </div>
+              
             </div>
 
             <div className="space-y-6">
@@ -1992,7 +2000,15 @@ export function AnimatedLandingPage() {
                 <a href="#qa" className="block transition-colors hover:text-white" style={{ color: 'var(--landing-text-secondary)' }}>
                   {t.landing.footer.links.qa}
                 </a>
-                <a href="#" className="block transition-colors hover:text-white" style={{ color: 'var(--landing-text-secondary)' }}>
+                <a 
+                  href="#" 
+                  className="block transition-colors hover:text-white" 
+                  style={{ color: 'var(--landing-text-secondary)' }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    showToast("Consulting service is not available yet");
+                  }}
+                >
                   {t.landing.footer.links.consulting}
                 </a>
               </div>
@@ -2009,9 +2025,9 @@ export function AnimatedLandingPage() {
                 <Link to="/terms" className="block transition-colors hover:text-white" style={{ color: 'var(--landing-text-secondary)' }}>
                   {t.landing.footer.links.terms}
                 </Link>
-                <a href="#" className="block transition-colors hover:text-white" style={{ color: 'var(--landing-text-secondary)' }}>
+                {/* <a href="#" className="block transition-colors hover:text-white" style={{ color: 'var(--landing-text-secondary)' }}>
                   {t.landing.footer.links.security}
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
