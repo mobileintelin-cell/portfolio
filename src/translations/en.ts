@@ -1,3 +1,11 @@
+import hrmImage from '../assets/hrm.png';
+import zaloHubImage from '../assets/zalohub.png';
+import eximbankImage from '../assets/eximbank.png';
+import ihpImage from '../assets/ihp.png';
+import namabankImage from '../assets/namabank.png';
+import tiktikImage from '../assets/tiktik.png';
+import meijiImage from '../assets/meiji.png';
+
 export const en = {
   // Navigation
   nav: {
@@ -355,7 +363,7 @@ export const en = {
             id: 'hrm',
             title: 'HRM - Human Resource Management Software',
             description: 'Comprehensive HR management system with attendance tracking, payroll automation, employee records, and detailed reporting. Optimizes HR processes and improves efficiency.',
-            image: 'src/assets/hrm.png',
+            image: hrmImage,
             tags: ['Web', 'Mobile', 'QA'],
             features: [
               'Comprehensive employee record management',
@@ -368,7 +376,7 @@ export const en = {
             id: 'zalohub',
             title: 'Zalo Hub Project',
             description: 'Multi-channel integration platform for Zalo OA, supporting customer management, AI chatbot, and marketing automation. A complete solution for businesses in the Zalo ecosystem.',
-            image: 'src/assets/zaloHub.png',
+            image: zaloHubImage,
             tags: ['Web', 'AI', 'Integration'],
             features: [
               'Integration with Zalo OA and AI chatbot',
@@ -381,7 +389,7 @@ export const en = {
             id: 'softotp',
             title: 'Soft OTP Solution - Eximbank',
             description: 'Soft OTP authentication system for Vietnam Eximbank, ensuring high security and smooth user experience. Fully compliant with banking security standards.',
-            image: 'src/assets/eximbank.png',
+            image: eximbankImage,
             tags: ['Mobile', 'Security', 'Banking'],
             features: [
               'High-security soft OTP authentication',
@@ -394,7 +402,7 @@ export const en = {
             id: 'bloodbank',
             title: 'Blood Donation Management - Red Cross',
             description: 'Integrated blood donation management system for the Red Cross, Hematology Hospital, and Blood Donation Centers. Optimizes the entire process from registration to blood inventory management.',
-            image: 'src/assets/ihp.png',
+            image: ihpImage,
             tags: ['Web', 'Healthcare', 'QA', 'Mobile'],
             features: [
               'Comprehensive donor information management',
@@ -407,7 +415,7 @@ export const en = {
             id: 'namabank',
             title: 'Digital Banking - Nam A Bank',
             description: 'Comprehensive digital banking solution for Nam A Bank, including mobile banking, internet banking, and modern financial services. Elevates customer experience.',
-            image: 'src/assets/namabank.png',
+            image: namabankImage,
             tags: ['Mobile', 'Web', 'FinTech'],
             features: [
               'Mobile banking with biometric authentication',
@@ -420,7 +428,7 @@ export const en = {
             id: 'tiktik',
             title: 'Customer Management - Tik Tik',
             description: 'Intelligent CRM system for Tik Tik loyalty program, integrating loyalty features, points management, and personalized marketing. Increased retention by 40%.',
-            image: 'src/assets/tiktik.png',
+            image: tiktikImage,
             tags: ['Web', 'Mobile', 'CRM'],
             features: [
               'Integrated loyalty program',
@@ -433,7 +441,7 @@ export const en = {
             id: 'meeasy',
             title: 'Me Easy App',
             description: 'App supporting mothers during pregnancy and parenting based on Japanese standards, offering professional knowledge, health tracking, and a community of mothers.',
-            image: 'src/assets/meiji.png',
+            image: meijiImage,
             tags: ['Mobile', 'Healthcare', 'Community'],
             features: [
               'Pregnancy tracking with Japanese standards',

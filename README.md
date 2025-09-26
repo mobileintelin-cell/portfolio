@@ -1,7 +1,7 @@
 
-  # Testing Website Design
+  # MMO Intelin
 
-  This is a code bundle for Testing Website Design. The original project is available at https://www.figma.com/design/wOG1JaLmfscILBwhoRotKV/Testing-Website-Design.
+  This is a code bundle for MMO Intelin. The original project is available at https://www.figma.com/design/wOG1JaLmfscILBwhoRotKV/Testing-Website-Design.
 
   ## Running the code
 

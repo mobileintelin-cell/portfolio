@@ -2,6 +2,14 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from '../contexts/LanguageContext';
 import { motion, AnimatePresence } from 'motion/react';
+import logoImage from '../assets/logo.png';
+import hrmImage from '../assets/hrm.png';
+import zaloHubImage from '../assets/zalohub.png';
+import eximbankImage from '../assets/eximbank.png';
+import ihpImage from '../assets/ihp.png';
+import namabankImage from '../assets/namabank.png';
+import tiktikImage from '../assets/tiktik.png';
+import meijiImage from '../assets/meiji.png';
 import { 
   ArrowRight, 
   ChevronDown,
@@ -580,8 +588,8 @@ export function AnimatedLandingPage() {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <img 
-                src="src/assets/logo.png" 
-                alt="MMO2025 Logo" 
+                src={logoImage} 
+                alt="MMO Intelin Logo" 
                 className="w-20 h-20 object-contain"
               />
              
@@ -1947,8 +1955,8 @@ export function AnimatedLandingPage() {
             <div className="space-y-6">
               <div className="flex items-center gap-3">
                 <img 
-                  src="src/assets/logo.png"
-                  alt="MMO2025 Logo" 
+                  src={logoImage}
+                  alt="MMO Intelin Logo" 
                   className="w-20 h-20 object-contain"
                 />
                 

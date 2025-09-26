@@ -1,4 +1,11 @@
 import { TranslationKeys } from './en';
+import hrmImage from '../assets/hrm.png';
+import zaloHubImage from '../assets/zalohub.png';
+import eximbankImage from '../assets/eximbank.png';
+import ihpImage from '../assets/ihp.png';
+import namabankImage from '../assets/namabank.png';
+import tiktikImage from '../assets/tiktik.png';
+import meijiImage from '../assets/meiji.png';
 
 export const vi: TranslationKeys = {
   // Navigation
@@ -370,7 +377,7 @@ export const vi: TranslationKeys = {
       id: 'hrm',
       title: 'Phần mềm Quản lý nhân sự HRM',
       description: 'Hệ thống quản lý nhân sự toàn diện với tính năng chấm công, tính lương, quản lý hồ sơ nhân viên và báo cáo chi tiết. Tối ưu hóa quy trình HR và nâng cao hiệu suất làm việc.',
-      image: 'src/assets/hrm.png',
+      image: hrmImage,
       tags: ['Web', 'Mobile', 'QA'],
       features: [
         'Quản lý hồ sơ nhân viên toàn diện',
@@ -383,7 +390,7 @@ export const vi: TranslationKeys = {
       id: 'zalohub',
       title: 'Dự án Zalo Hub',
       description: 'Nền tảng tích hợp đa kênh cho Zalo OA, hỗ trợ quản lý khách hàng, chatbot AI và tự động hóa marketing. Giải pháp toàn diện cho doanh nghiệp trên hệ sinh thái Zalo.',
-      image: 'src/assets/zaloHub.png',
+      image: zaloHubImage,
       tags: ['Web', 'AI', 'Integration'],
       features: [
         'Tích hợp Zalo OA và chatbot AI',
@@ -396,7 +403,7 @@ export const vi: TranslationKeys = {
       id: 'softotp',
       title: 'Giải pháp Soft OTP - Eximbank',
       description: 'Hệ thống xác thực OTP mềm cho Ngân hàng Xuất nhập khẩu Việt Nam, đảm bảo bảo mật cao và trải nghiệm người dùng mượt mà. Tuân thủ đầy đủ các tiêu chuẩn bảo mật ngân hàng.',
-      image: 'src/assets/eximbank.png',
+      image: eximbankImage,
       tags: ['Mobile', 'Security', 'Banking'],
       features: [
         'Xác thực OTP mềm bảo mật cao',
@@ -409,7 +416,7 @@ export const vi: TranslationKeys = {
       id: 'bloodbank',
       title: 'Quản lý hiến máu - Hội Chữ thập đỏ',
       description: 'Hệ thống quản lý hiến máu nhân đạo tích hợp cho Hội Chữ thập đỏ, Bệnh viện Truyền máu Huyết học và Trung tâm Hiến máu. Tối ưu hóa quy trình từ đăng ký đến quản lý kho máu.',
-      image: 'src/assets/ihp.png',
+      image: ihpImage,
       tags: ['Web', 'Healthcare', 'QA','Mobile'],
       features: [
         'Quản lý thông tin người hiến máu',
@@ -422,7 +429,7 @@ export const vi: TranslationKeys = {
       id: 'namabank',
       title: 'Ngân hàng số - Nam Á Bank',
       description: 'Giải pháp ngân hàng số toàn diện cho Ngân hàng TMCP Nam Á, bao gồm mobile banking, internet banking và các dịch vụ tài chính hiện đại. Nâng tầm trải nghiệm khách hàng.',
-      image: 'src/assets/namabank.png',
+      image: namabankImage,
       tags: ['Mobile', 'Web', 'FinTech'],
       features: [
         'Mobile banking với biometric auth',
@@ -435,7 +442,7 @@ export const vi: TranslationKeys = {
       id: 'tiktik',
       title: 'Quản lý Khách hàng - Tik Tik',
       description: 'Hệ thống CRM thông minh cho chương trình khách hàng thân thiết Tik Tik, tích hợp loyalty program, quản lý điểm thưởng và personalized marketing. Tăng trưởng retention 40%.',
-      image: 'src/assets/tiktik.png',
+      image: tiktikImage,
       tags: ['Web', 'Mobile', 'CRM'],
       features: [
         'Loyalty program tích hợp',
@@ -448,7 +455,7 @@ export const vi: TranslationKeys = {
       id: 'meeasy',
       title: 'Phần mềm Mẹ Easy',
       description: 'Ứng dụng hỗ trợ mẹ bầu và nuôi con theo chuẩn Nhật Bản, cung cấp kiến thức chuyên môn, theo dõi sức khỏe và kết nối cộng đồng mẹ. Đồng hành cùng hành trình làm mẹ.',
-      image: 'src/assets/meiji.png',
+      image: meijiImage,
       tags: ['Mobile', 'Healthcare', 'Community'],
       features: [
         'Theo dõi thai kỳ theo chuẩn Nhật',
