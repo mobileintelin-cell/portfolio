@@ -182,20 +182,7 @@ export const en = {
             image: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?crop=entropy&cs=tinysrgb&fit=crop&w=400&h=400&q=80'
           }
         ]},
-    overview: {
-      mobile: {
-        title: "Mobile Development",
-        description: "Native iOS and Android applications with exceptional user experiences and performance optimization.",
-      },
-      web: {
-        title: "Web Development",
-        description: "Scalable web applications with modern frameworks, responsive design, and optimized performance.",
-      },
-      qa: {
-        title: "Quality Control",
-        description: "Comprehensive testing strategies ensuring reliability, security, and flawless user experiences."
-      }
-    },
+   
     whyChooseUs: {
       title: "Why Choose Us",
       subtitle: "Our integrated approach ensures seamless collaboration between mobile, web, and QA teams, delivering exceptional results faster than traditional workflows."
