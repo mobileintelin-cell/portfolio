@@ -1,0 +1,569 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  
+  /* Landing Page Dark Theme */
+  --landing-bg-base: #0a0a0a;
+  --landing-bg-elevated: #111111;
+  --landing-text-primary: #ffffff;
+  --landing-text-secondary: #a1a1aa;
+  --landing-accent-primary: #00d9ff;
+  --landing-accent-soft: rgba(0, 217, 255, 0.1);
+  --landing-border-subtle: rgba(255, 255, 255, 0.08);
+  --landing-particle-color: rgba(0, 217, 255, 0.4);
+  
+  /* App Theme (Dark Landing Page Style) */
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --card: #111111;
+  --card-foreground: #ffffff;
+  --popover: #111111;
+  --popover-foreground: #ffffff;
+  --primary: #00d9ff;
+  --primary-foreground: #000000;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #a1a1aa;
+  --muted: #1a1a1a;
+  --muted-foreground: #a1a1aa;
+  --accent: #00d9ff;
+  --accent-foreground: #000000;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.05);
+  --input-background: rgba(255, 255, 255, 0.05);
+  --switch-background: #1a1a1a;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #00d9ff;
+  --chart-1: #00d9ff;
+  --chart-2: #00a3cc;
+  --chart-3: #0080a3;
+  --chart-4: #005c7a;
+  --chart-5: #004052;
+  --radius: 0.75rem;
+  --sidebar: #111111;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #00d9ff;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #1a1a1a;
+  --sidebar-accent-foreground: #a1a1aa;
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --sidebar-ring: #00d9ff;
+}
+
+.dark {
+  /* Dark mode keeps the same theme for consistency */
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --card: #111111;
+  --card-foreground: #ffffff;
+  --popover: #111111;
+  --popover-foreground: #ffffff;
+  --primary: #00d9ff;
+  --primary-foreground: #000000;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #a1a1aa;
+  --muted: #1a1a1a;
+  --muted-foreground: #a1a1aa;
+  --accent: #00d9ff;
+  --accent-foreground: #000000;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.05);
+  --ring: #00d9ff;
+  --chart-1: #00d9ff;
+  --chart-2: #00a3cc;
+  --chart-3: #0080a3;
+  --chart-4: #005c7a;
+  --chart-5: #004052;
+  --sidebar: #111111;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #00d9ff;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #1a1a1a;
+  --sidebar-accent-foreground: #a1a1aa;
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --sidebar-ring: #00d9ff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Landing page theme tokens */
+  --color-landing-bg-base: var(--landing-bg-base);
+  --color-landing-bg-elevated: var(--landing-bg-elevated);
+  --color-landing-text-primary: var(--landing-text-primary);
+  --color-landing-text-secondary: var(--landing-text-secondary);
+  --color-landing-accent-primary: var(--landing-accent-primary);
+  --color-landing-accent-soft: var(--landing-accent-soft);
+  --color-landing-border-subtle: var(--landing-border-subtle);
+  --color-landing-particle: var(--landing-particle-color);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+/* Custom animations for the landing page */
+@layer utilities {
+  /* Smooth scrolling override for GSAP */
+  .gsap-scroll {
+    scroll-behavior: auto !important;
+  }
+
+  /* Particle animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-10px) scale(1.1); }
+  }
+
+  .particle-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .particle-float:nth-child(2) {
+    animation-delay: 0.5s;
+    animation-duration: 4s;
+  }
+
+  .particle-float:nth-child(3) {
+    animation-delay: 1s;
+    animation-duration: 3.5s;
+  }
+
+  .particle-float:nth-child(4) {
+    animation-delay: 1.5s;
+    animation-duration: 4.5s;
+  }
+
+  .particle-float:nth-child(5) {
+    animation-delay: 2s;
+    animation-duration: 3.2s;
+  }
+
+  .particle-float:nth-child(6) {
+    animation-delay: 2.5s;
+    animation-duration: 4.2s;
+  }
+
+  /* Gradient animations */
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .gradient-animate {
+    background: linear-gradient(-45deg, var(--landing-accent-primary), var(--landing-bg-elevated), var(--landing-accent-primary));
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  /* Typing animation for hero text */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--landing-accent-primary); }
+  }
+
+  .typing-text {
+    overflow: hidden;
+    border-right: 3px solid var(--landing-accent-primary);
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+
+  /* Perspective transforms for 3D effects */
+  .perspective {
+    perspective: 1000px;
+  }
+
+  .transform-3d {
+    transform-style: preserve-3d;
+  }
+
+  /* Hover glow effects */
+  .glow-on-hover {
+    transition: all 0.3s ease;
+  }
+
+  .glow-on-hover:hover {
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+  }
+
+  /* Loading skeleton for GSAP */
+  .loading-skeleton {
+    background: linear-gradient(90deg, transparent 25%, rgba(255, 255, 255, 0.05) 50%, transparent 75%);
+    background-size: 200% 100%;
+    animation: loading-shimmer 2s infinite;
+  }
+
+  @keyframes loading-shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  /* Backdrop blur utilities */
+  .backdrop-blur-strong {
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+  }
+
+  /* Custom scrollbar for dark theme */
+  .dark-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .dark-scrollbar::-webkit-scrollbar-track {
+    background: var(--landing-bg-base);
+  }
+
+  .dark-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--landing-border-subtle);
+    border-radius: 4px;
+  }
+
+  .dark-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--landing-accent-primary);
+  }
+
+  /* Portfolio auto-scroll animation */
+  .portfolio-auto-scroll {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .portfolio-auto-scroll::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .portfolio-auto-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+  }
+
+  .portfolio-auto-scroll::-webkit-scrollbar-thumb {
+    background: var(--landing-accent-primary);
+    border-radius: 3px;
+  }
+
+  /* Hide scrollbars completely for portfolio grid */
+  .portfolio-no-scrollbar {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .portfolio-no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  /* Text gradient utilities */
+  .text-gradient {
+    background: linear-gradient(135deg, var(--landing-text-primary) 0%, var(--landing-accent-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Reveal animations */
+  .reveal-up {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+
+  .reveal-up.revealed {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .reveal-left {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+
+  .reveal-left.revealed {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .reveal-right {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: all 0.6s ease;
+  }
+
+  .reveal-right.revealed {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* Stagger delays for reveal animations */
+  .stagger-1 { transition-delay: 0.1s; }
+  .stagger-2 { transition-delay: 0.2s; }
+  .stagger-3 { transition-delay: 0.3s; }
+  .stagger-4 { transition-delay: 0.4s; }
+  .stagger-5 { transition-delay: 0.5s; }
+  .stagger-6 { transition-delay: 0.6s; }
+
+  /* Enhanced marquee animation for trusted companies */
+  .marquee-content {
+    animation: marquee-scroll 20s linear infinite;
+  }
+
+  @keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Pause marquee on hover */
+  .marquee-content:hover {
+    animation-play-state: paused;
+  }
+
+  /* Portfolio auto-scroll animation */
+  @keyframes portfolio-auto-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Company card hover effects */
+  .company-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .company-card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 217, 255, 0.15);
+  }
+
+  /* Glow effect for trusted section */
+  @keyframes trusted-glow {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+  }
+
+  .trusted-glow {
+    animation: trusted-glow 4s ease-in-out infinite;
+  }
+
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    .particle-float,
+    .gradient-animate,
+    .typing-text,
+    .loading-skeleton {
+      animation: none;
+    }
+    
+    .reveal-up,
+    .reveal-left,
+    .reveal-right {
+      transform: none;
+      opacity: 1;
+      transition: none;
+    }
+  }
+
+  /* Dark theme utilities */
+  .dark-glass {
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .dark-card {
+    background: var(--landing-bg-elevated);
+    border: 1px solid var(--landing-border-subtle);
+    border-radius: 12px;
+  }
+
+  .dark-input {
+    background: var(--landing-bg-base);
+    border: 1px solid var(--landing-border-subtle);
+    color: var(--landing-text-primary);
+  }
+
+  .dark-input:focus {
+    border-color: var(--landing-accent-primary);
+    box-shadow: 0 0 0 3px rgba(0, 217, 255, 0.1);
+  }
+
+  .dark-button-primary {
+    background: var(--landing-accent-primary);
+    color: #000000;
+    border: none;
+    font-weight: 600;
+  }
+
+  .dark-button-primary:hover {
+    background: #00c4e6;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 217, 255, 0.3);
+  }
+
+  .dark-button-secondary {
+    background: transparent;
+    color: var(--landing-text-secondary);
+    border: 1px solid var(--landing-border-subtle);
+  }
+
+  .dark-button-secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--landing-text-primary);
+  }
+
+  /* Selection styles */
+  ::selection {
+    background: var(--landing-accent-primary);
+    color: #000000;
+  }
+
+  /* Focus styles */
+  *:focus-visible {
+    outline: 2px solid var(--landing-accent-primary);
+    outline-offset: 2px;
+  }
+
+  /* Scrollbar for webkit browsers */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--landing-bg-base);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--landing-border-subtle);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Firefox scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--landing-border-subtle) var(--landing-bg-base);
+  }
+}
