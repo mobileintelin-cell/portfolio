@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { ToastProvider } from './contexts/ToastContext';
+import { ThemeProvider } from './contexts/ThemeContext';
 import { DarkLogin } from './components/DarkLogin';
 import { DarkTopNavigation } from './components/DarkTopNavigation';
 import { DarkSidebarNav } from './components/DarkSidebarNav';
@@ -423,9 +424,10 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <LanguageProvider>
-        <ToastProvider>
-          <AppContextProvider>
+      <ThemeProvider>
+        <LanguageProvider>
+          <ToastProvider>
+            <AppContextProvider>
         <Routes>
           {/* Landing Page */}
           <Route path="/" element={<LandingPageComponent />} />
@@ -514,9 +516,10 @@ export default function App() {
           {/* Catch all route */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
-          </AppContextProvider>
-        </ToastProvider>
-      </LanguageProvider>
+            </AppContextProvider>
+          </ToastProvider>
+        </LanguageProvider>
+      </ThemeProvider>
     </BrowserRouter>
   );
 }

@@ -29,6 +29,7 @@ import {
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { LanguageDropdown } from './LanguageDropdown';
+import { ThemeToggle } from './ThemeToggle';
 
 // GSAP will be imported dynamically to avoid SSR issues
 let gsap: any = null;
@@ -625,6 +626,7 @@ export function AnimatedLandingPage() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-6">
+              <ThemeToggle variant="nav" />
               <LanguageDropdown variant="nav" />
             {import.meta.env.DEV && 
             <div> 
@@ -683,7 +685,10 @@ export function AnimatedLandingPage() {
                 </a>
                 
                 <div className="flex flex-col gap-4 pt-6 border-t" style={{ borderColor: 'var(--landing-border-subtle)' }}>
-                  <LanguageDropdown variant="nav" />
+                  <div className="flex items-center gap-4">
+                    <ThemeToggle variant="nav" />
+                    <LanguageDropdown variant="nav" />
+                  </div>
                   <Link to="/login">
                     <Button 
                       variant="ghost" 
