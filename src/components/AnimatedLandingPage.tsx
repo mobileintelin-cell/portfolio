@@ -8,8 +8,6 @@ import hrmImage from '../assets/hrm.png';
 import zaloHubImage from '../assets/zalohub.png';
 import eximbankImage from '../assets/eximbank.png';
 import ihpImage from '../assets/ihp.png';
-import namabankImage from '../assets/namabank.png';
-import tiktikImage from '../assets/tiktik.png';
 import meijiImage from '../assets/meiji.png';
 import { 
   ArrowRight, 
@@ -116,7 +114,7 @@ export function AnimatedLandingPage() {
 
   const [currentPortfolioIds, setCurrentPortfolioIds] = useState({
     featured: 'hrm',
-    grid: ['zalohub', 'softotp', 'bloodbank', 'namabank', 'tiktik', 'meeasy']
+    grid: ['zalohub', 'softotp', 'bloodbank', 'meeasy']
   });
 
   // Auto-scroll functionality for portfolio cards with hover pause
@@ -1292,7 +1290,7 @@ export function AnimatedLandingPage() {
       </section>
 
       {/* 4) Meet the Team */}
-      <section ref={teamRef} className="py-32" style={{ backgroundColor: 'var(--landing-bg-base)' }}>
+      <section ref={teamRef} id="team" className="py-32" style={{ backgroundColor: 'var(--landing-bg-base)' }}>
         <div className="max-w-7xl mx-auto px-4 lg:px-20">
           <div className="text-center space-y-8 mb-20">
             <h2 className="text-5xl font-bold tracking-tight" style={{ color: 'var(--landing-text-primary)' }}>
@@ -1676,9 +1674,8 @@ export function AnimatedLandingPage() {
             </div>
           </div>
 
-          {/* Trusted Companies Section - Enhanced */}
-          <div className="mt-24 pt-20 relative">
-            {/* Background glow effect */}
+          {/* Trusted Companies Section - Hidden per user request */}
+          {/* <div className="mt-24 pt-20 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-500/5 to-transparent blur-3xl"></div>
             
             <div className="relative z-10">
@@ -1738,7 +1735,6 @@ export function AnimatedLandingPage() {
                 </div>
               </div>
               
-              {/* Trust indicators */}
               <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 <div className="text-center group">
                   <div className="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110" style={{ backgroundColor: 'var(--landing-accent-soft)' }}>
@@ -1765,7 +1761,7 @@ export function AnimatedLandingPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

@@ -3,8 +3,6 @@ import hrmImage from '../assets/hrm.png';
 import zaloHubImage from '../assets/zalohub.png';
 import eximbankImage from '../assets/eximbank.png';
 import ihpImage from '../assets/ihp.png';
-import namabankImage from '../assets/namabank.png';
-import tiktikImage from '../assets/tiktik.png';
 import meijiImage from '../assets/meiji.png';
 
 export const vi: TranslationKeys = {
@@ -139,7 +137,7 @@ export const vi: TranslationKeys = {
           {
             id: 'tam',
             name: 'Cao Thành Tâm',
-            role: 'Kỹ Sư Phần Mềm Trưởng',
+            role: 'Lead Software Engineer',
             bio: 'Lãnh đạo kỹ thuật với nhiều kinh nghiệm trong kiến trúc phần mềm và quản lý đội ngũ.',
             funFact: 'Dẫn dắt đội ngũ chính xác và luôn mentor cho các lập trình viên hằng ngày',
             skills: ['Lãnh đạo', 'Kiến trúc', 'Mentoring'],
@@ -148,7 +146,7 @@ export const vi: TranslationKeys = {
           {
             id: 'tinh',
             name: 'Nguyễn Văn Tinh',
-            role: 'Kỹ Sư Phần Mềm (iOS Chính)',
+            role: 'Software Engineer (iOS Main)',
             bio: 'Chuyên gia iOS tập trung vào việc tạo trải nghiệm di động xuất sắc với Swift và các framework hiện đại.',
             funFact: 'Viết code Swift trong khi nghe nhạc lo-fi',
             skills: ['iOS', 'Swift', 'Di động'],
@@ -157,7 +155,7 @@ export const vi: TranslationKeys = {
           {
             id: 'le',
             name: 'Nguyễn Thị Tuấn Lê',
-            role: 'Kỹ Sư QA',
+            role: 'QA Engineering',
             bio: 'Chuyên gia kiểm thử đảm bảo ứng dụng được test kỹ lưỡng và mang lại trải nghiệm hoàn hảo.',
             funFact: 'Tìm edge case nhanh hơn hầu hết mọi người tìm thấy chìa khóa của họ',
             skills: ['QA', 'Kiểm thử', 'Tự động hóa'],
@@ -166,7 +164,7 @@ export const vi: TranslationKeys = {
           {
             id: 'dung',
             name: 'Nguyễn Trần Anh Dũng',
-            role: 'Kỹ Sư Phần Mềm (Backend Chính)',
+            role: 'Software Engineer (Backend Main)',
             bio: 'Chuyên gia backend xây dựng kiến trúc server mở rộng và hệ thống API mạnh mẽ.',
             funFact: 'Tối ưu hóa truy vấn cơ sở dữ liệu ngay cả trong giấc mơ',
             skills: ['Backend', 'API', 'Cơ sở dữ liệu'],
@@ -175,7 +173,7 @@ export const vi: TranslationKeys = {
           {
             id: 'duy',
             name: 'Trần Hạ Khánh Duy',
-            role: 'Kỹ Sư Phần Mềm (Web Chính)',
+            role: 'Software Engineer (Web Main)',
             bio: 'Chuyên gia frontend tạo ra ứng dụng web responsive với framework hiện đại và UX trực quan.',
             funFact: 'Tạo giao diện pixel-perfect với khả năng CSS như phù thủy',
             skills: ['Frontend', 'React', 'Web'],
@@ -184,7 +182,7 @@ export const vi: TranslationKeys = {
           {
             id: 'thi',
             name: 'Nguyễn Đình Thi',
-            role: 'Kỹ Sư Phần Mềm (Mobile Chính)',
+            role: 'Software Engineer (Mobile Main)',
             bio: 'Chuyên gia phát triển di động chuyên về giải pháp cross-platform và tối ưu hiệu năng native.',
             funFact: 'Xây dựng ứng dụng hoạt động mượt mà trên mọi thiết bị',
             skills: ['Di động', 'Cross-platform', 'Hiệu năng'],
@@ -397,7 +395,7 @@ export const vi: TranslationKeys = {
         'Quản lý khách hàng đa kênh',
         'Tự động hóa marketing campaigns'
       ],
-      metric: '10M+ Messages'
+      metric: '1M+ Messages'
     },
     'softotp': {
       id: 'softotp',
@@ -424,32 +422,6 @@ export const vi: TranslationKeys = {
         'Lịch hẹn và thông báo tự động'
       ],
       metric: '50K+ Donors'
-    },
-    'namabank': {
-      id: 'namabank',
-      title: 'Ngân hàng số - Nam Á Bank',
-      description: 'Giải pháp ngân hàng số toàn diện cho Ngân hàng TMCP Nam Á, bao gồm mobile banking, internet banking và các dịch vụ tài chính hiện đại. Nâng tầm trải nghiệm khách hàng.',
-      image: namabankImage,
-      tags: ['Mobile', 'Web', 'FinTech'],
-      features: [
-        'Mobile banking với biometric auth',
-        'Internet banking tích hợp AI',
-        'Ví điện tử và thanh toán QR'
-      ],
-      metric: '500K+ Users'
-    },
-    'tiktik': {
-      id: 'tiktik',
-      title: 'Quản lý Khách hàng - Tik Tik',
-      description: 'Hệ thống CRM thông minh cho chương trình khách hàng thân thiết Tik Tik, tích hợp loyalty program, quản lý điểm thưởng và personalized marketing. Tăng trưởng retention 40%.',
-      image: tiktikImage,
-      tags: ['Web', 'Mobile', 'CRM'],
-      features: [
-        'Loyalty program tích hợp',
-        'Quản lý điểm thưởng thông minh',
-        'Personalized marketing campaigns'
-      ],
-      metric: '40% Retention'
     },
     'meeasy': {
       id: 'meeasy',
